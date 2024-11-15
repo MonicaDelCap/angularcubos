@@ -1,0 +1,5 @@
+<label>Cubos</label>
+<select name="selectcubo" #selectcubo >
+    <option *ngFor="let cub of cubos" [value]="cub.idCubo">{{cub.nombre}}</option>
+</select>
+<button (click)="comprar()">Comprar</button>

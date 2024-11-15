@@ -1,0 +1,11 @@
+<div class="card" style="width: 18rem;">
+    <img src="{{cubo.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{cubo.nombre}}</h5>
+      <p class="card-text">{{cubo.precio}}</p>
+      <p>Valoracion: {{cubo.valoracion}}</p>
+    </div>
+</div>
+<div *ngFor="let com of comentarios">
+    <p>{{com.comentario}}</p>
+</div>

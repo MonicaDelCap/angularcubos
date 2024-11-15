@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;" *ngFor="let cub of cubos">
+    <img src="{{cub.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{cub.nombre}}</h5>
+      <p class="card-text">{{cub.precio}}</p>
+      <p>Valoracion: {{cub.valoracion}}</p>
+      <a [routerLink]="['/detalles/', cub.idCubo]" class="btn btn-primary">Detalles</a>
+
+    </div>
+</div>

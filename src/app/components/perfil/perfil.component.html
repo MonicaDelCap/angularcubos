@@ -1,0 +1,10 @@
+<h1>Hola {{perfil.nombre}}</h1>
+<h1>Detalles Email:{{perfil.email}}</h1>
+<button (click)="historialCompra()">HISTORIAL</button>
+<button (click)="comprar()">Comprar</button>
+<div *ngIf="show == true">
+    <ul *ngFor="let com of compras">
+        <li>ID PEDIDO: {{com.idPedido}}, FECHA: {{com.fechaPedido}} </li>
+    </ul>
+</div>
+
